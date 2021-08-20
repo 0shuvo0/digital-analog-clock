@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clocks{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: .5em;
+}
+.clock{
+    --clr: #000;
+    border: 3px solid var(--clr);
+    border-radius: 50%;
+    position: relative;
+}
+.hand{
+    height: 10%;
+    width: 45%;
+    border-radius: 50px;
+    background-color: var(--clr);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+    transform-origin: left center;
+    transition: transform .5s;
+}
+.hand.short{
+    width: 40%;
+    transform: translateY(-50%) rotate(135deg);
+}
+
+.digital-clock{
+    --size: min(60vh, 60vw);
+    height: var(--size);
+    width: var(--size);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2em;
+}
+
+
+.digital-clock .clocks:nth-child(1) .clock .hand, .digital-clock .clocks:nth-child(2) .clock .hand{
+    --clr: #FF715B;
+}
+
+.digital-clock .clocks:nth-child(3) .clock .hand, .digital-clock .clocks:nth-child(4) .clock .hand{
+    --clr: #537A5A;
+}
