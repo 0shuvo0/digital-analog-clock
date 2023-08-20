@@ -52,9 +52,9 @@ body{
 
 
 .digital-clock .clocks:nth-child(1) .clock .hand, .digital-clock .clocks:nth-child(2) .clock .hand{
-    --clr: #FF715B;
+    --clr: #fa33ee;
 }
 
 .digital-clock .clocks:nth-child(3) .clock .hand, .digital-clock .clocks:nth-child(4) .clock .hand{
-    --clr: #537A5A;
+    --clr: #e3ff0f;
 }
