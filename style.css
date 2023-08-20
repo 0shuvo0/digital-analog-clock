@@ -15,7 +15,7 @@ body{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(6, 1fr);
-    gap: .5em;
+    gap: .2em;
 }
 .clock{
     --clr: #545252;
@@ -25,7 +25,7 @@ body{
 }
 .hand{
     height: 10%;
-    width: 45%;
+    width: 48%;
     border-radius: 50px;
     background-color: var(--clr);
     position: absolute;
@@ -36,7 +36,7 @@ body{
     transition: transform .5s;
 }
 .hand.short{
-    width: 40%;
+    width: 43%;
     transform: translateY(-50%) rotate(135deg);
 }
 
