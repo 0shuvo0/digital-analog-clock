@@ -8,6 +8,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #333;
 }
 
 .clocks{
@@ -17,7 +18,7 @@ body{
     gap: .5em;
 }
 .clock{
-    --clr: #000;
+    --clr: #545252;
     border: 3px solid var(--clr);
     border-radius: 50%;
     position: relative;
